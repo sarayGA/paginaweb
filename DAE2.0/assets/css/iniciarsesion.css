@@ -1,0 +1,278 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+/*
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+/* Header */
+
+#header {
+    padding: 8em 0 0.1em 0 ;
+}
+
+    #header .logo {
+        display: block;
+        border-bottom: 0;
+        color: inherit;
+        font-weight: 900;
+        letter-spacing: 0.35em;
+        margin: 0 0 2.5em 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+        #header .logo > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #header .logo .symbol {
+            margin-right: 0.65em;
+        }
+
+            #header .logo .symbol img {
+                display: block;
+                width: 2em;
+                height: 2em;
+            }
+
+    #header nav {
+        position: fixed;
+        right: 2em;
+        top: 2em;
+        z-index: 10000;
+    }
+
+        #header nav ul {
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            #header nav ul li {
+                display: block;
+                padding: 0;
+            }
+
+                #header nav ul li a {
+                    display: block;
+                    position: relative;
+                    height: 3em;
+                    line-height: 3em;
+                    padding: 0 1.5em;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 4px;
+                    border: 0;
+                    font-size: 0.8em;
+                    font-weight: 900;
+                    letter-spacing: 0.35em;
+                    text-transform: uppercase;
+                }
+
+                #header nav ul li a[href="#menu"] {
+                    -webkit-tap-highlight-color: transparent;
+                    width: 4em;
+                    text-indent: 4em;
+                    font-size: 1em;
+                    overflow: hidden;
+                    padding: 0;
+                    white-space: nowrap;
+                }
+
+                    #header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+                        -moz-transition: opacity 0.2s ease;
+                        -webkit-transition: opacity 0.2s ease;
+                        -ms-transition: opacity 0.2s ease;
+                        transition: opacity 0.2s ease;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 2em 2em;
+                    }
+
+                    #header nav ul li a[href="#menu"]:before {
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+                        opacity: 0;
+                    }
+
+                    #header nav ul li a[href="#menu"]:after {
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+                        opacity: 1;
+                    }
+
+                    #header nav ul li a[href="#menu"]:hover:before {
+                        opacity: 1;
+                    }
+
+                    #header nav ul li a[href="#menu"]:hover:after {
+                        opacity: 0;
+                    }
+
+    @media screen and (max-width: 736px) {
+
+        #header {
+            padding: 4em 0 0.1em 0 ;
+        }
+
+            #header nav {
+                right: 0.5em;
+                top: 0.5em;
+            }
+
+                #header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+                    background-size: 1.5em 1.5em;
+                }
+
+    }
+    .login {
+        display: flex;
+        align-items: center; /*De forma vertical*/
+        justify-content: center; /*Alinear de forma horizontal*/
+        flex-direction: column; /*De arriba hacia abajo*/
+        padding: 0px 30px; /*Arriba y abajo*/
+        min-height: calc(100vh - 200px);
+        margin-top: 50px;
+    }
+    
+    .login__container {
+        background-color:rgba(255, 255, 255, 0.1) ; /*Form medio balnco transparente*/
+        border: 2px solid rgba(0, 0, 0, 0.425);
+        border-radius: 40px;
+        color: rgba(0, 0, 0, 0.699);
+        padding: 60px 68px 40px;
+        margin-top: 100px ;
+        min-height: 800px;
+        height: 500px;
+        width: 300px;
+        display: flex;
+        justify-content: space-around; /*para que nos haga un espacio en todos los elementos*/
+        flex-direction: column;
+    }
+    
+    .login__container--form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login__container--form label {
+        font-size: 14px;
+    }
+    
+    .login__container--remember {
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between; /*Para que haya un espacio en medio de los dos elementos*/
+        margin-top: 10px;
+    }
+    
+    .login__container--remember a {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        text-decoration: none; /*Le quitamos el subrayado*/
+    }
+    
+    .login__container--remember a:hover {
+        text-decoration: underline; /*Al poner el cursor encima de la palabra aparece el subrayado*/
+    }
+    
+    .login__container--social > div{ /*>div coge todos los div que hay dentro de esta clase*/
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .login__container--social > div > img{ /*>div coge todos los div que hay dentro de esta clase*/
+        width: 30px;
+        margin-right: 10px;
+    }
+    
+    .login__container--register {
+        font-size: 14px;
+    }
+    
+    .login__container--register a {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold; /*Pone el texto en negrita*/
+        text-decoration: none;
+    }
+    
+    .login__container--register a:hover {
+        text-decoration: underline; /*Al poner el cursor encima de la palabra aparece el subrayado*/
+    }
+    
+    .input {
+        background-color: transparent; /*Los input estan transparentes*/
+        border-left: 0px;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        font-size: 16px;
+        font-family: 'Muli', sans-serif;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+        outline: none; /*Para que el cuadro de texto no tenda bordes azules*/
+        height: 50px;
+    }
+    
+    ::placeholder { /*nuestro pseudoelemento, el texto del input se pone blanco*/
+        color: rgb(0, 0, 0);
+    }
+    
+    .button {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 25px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 50px;
+        letter-spacing: 1px; /*el boton tiene más alto*/
+        margin: 10px 0px;
+    }
